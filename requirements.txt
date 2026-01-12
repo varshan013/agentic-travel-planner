@@ -1,5 +1,9 @@
-langgraph
+fastapi
+uvicorn[standard]
 langchain
 langchain-openai
-openai
+langgraph
 python-dotenv
+pydantic
+reportlab
+python-docx
