@@ -1,20 +1,7 @@
-# Python
-__pycache__/
-*.pyc
 .env
-
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb
-
-# Generated files
 *.pdf
 *.docx
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Virtual env
+*.ipynb
+.ipynb_checkpoints/
+__pycache__/
 venv/
-.env/
