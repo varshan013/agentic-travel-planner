@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Agentic AI Travel Planner</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <header class="header">
+    <h1>✈️ Agentic AI Travel Planner</h1>
+    <p>AI-powered trips • Smart budgets • Export-ready itineraries</p>
+  </header>
+
+  <!-- Form Card -->
+  <div class="card form-card">
+    <h2>🧳 Plan Your Trip</h2>
+
+    <div class="form">
+      <input id="destination" placeholder="Destination (e.g. Japan, Bali)" />
+      <input id="days" type="number" placeholder="Number of days" min="1" />
+      <input id="people" type="number" placeholder="Travelers" value="1" min="1" />
+
+      <select id="budget">
+        <option value="budget">💸 Budget</option>
+        <option value="mid">💼 Mid-range</option>
+        <option value="luxury">✨ Luxury</option>
+      </select>
+    </div>
+
+    <!-- Smaller centered button -->
+    <div class="button-wrapper">
+      <button onclick="planTrip()">🚀 Generate Trip Plan</button>
+    </div>
+  </div>
+
+  <!-- Loading -->
+  <div id="loading" class="loading hidden">
+    🤖 AI is planning your trip...
+  </div>
+
+  <!-- Output Card -->
+  <div class="card output-card">
+    <h2>📍 Your Travel Itinerary</h2>
+    <pre id="output" class="output"></pre>
+  </div>
+
+  <!-- Export buttons -->
+  <div class="export-buttons hidden" id="exportButtons">
+    <a href="/export/pdf" target="_blank">⬇️ Download PDF</a>
+    <a href="/export/docx" target="_blank">⬇️ Download DOCX</a>
+  </div>
+
+  <footer class="footer">
+    <p>Built with ❤️ using Agentic AI • FastAPI • LangGraph</p>
+  </footer>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
