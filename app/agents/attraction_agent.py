@@ -15,7 +15,7 @@ def attraction_agent(state):
     {plan_outline}
 
     Suggest top attractions and activities.
-    Group them logically for a multi-day trip.
+    
     """
 
     response = llm.invoke(prompt)
